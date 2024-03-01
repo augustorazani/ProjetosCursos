@@ -38,6 +38,22 @@ namespace ControleDeEstoquePOO
             Console.WriteLine();
             Console.WriteLine("Dados atualizados: " + p);
 
+            Console.WriteLine();
+            Console.Write("Digite os dados de outro produto na mesma linha: ");
+            string[] vet = Console.ReadLine().Split(' ');
+            p.Nome = vet[0];
+            p.Preco = double.Parse(vet[1], CultureInfo.InvariantCulture);
+            p.Quantidade = int.Parse(vet[2]);
+
+            
+            Console.WriteLine();
+            Console.Write("Agora digite a porcentagem aplicada sobre o valor total do produto: ");
+            double taxa = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            p.AdicionarValor(taxa);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + p);               
+
             Console.ReadLine();
         }
         

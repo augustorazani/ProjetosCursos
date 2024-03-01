@@ -23,6 +23,10 @@ namespace ControleDeEstoque
             Quantidade -= quantidade;
         }
 
+        public void AdicionarValor (double taxa)
+        {
+            Preco += Preco * (taxa / 100);
+        }
         public override string ToString() //override (sobreposicao) explicado no capitulo de heranca
         {
             return Nome
