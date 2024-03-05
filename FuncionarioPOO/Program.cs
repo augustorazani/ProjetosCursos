@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace FuncionarioPOO
 {
-    internal class Program
+    internal static class Program
     {
         private static void Main(string[] args)
         {

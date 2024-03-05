@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace exercicio_2._2_prova
 {
-    internal class Program
+    internal static class Program
     {
         private static void Main(string[] args)
         {
