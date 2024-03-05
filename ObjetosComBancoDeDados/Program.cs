@@ -22,7 +22,7 @@ namespace ObjetosComBancoDeDados
                     produto.IdProduto = int.Parse(Console.ReadLine());
                     SqlCommand enviarIdProduto = connection.CreateCommand();
 
-                    enviarIdProduto.CommandText = "INSERT INTO [dbo.Produto] (idProduto) VALUES (@IdProduto)";
+                    enviarIdProduto.CommandText = "INSERT INTO Produto(idProduto) VALUES(@IdProduto)";
                     enviarIdProduto.Parameters.AddWithValue("@IdProduto", produto.IdProduto);
                     // Executar o comando SQL para inserir o idProduto na tabela Produto
                     enviarIdProduto.ExecuteNonQuery();
