@@ -26,7 +26,7 @@ namespace ControleDeEstoquePOO
             Console.Write("Digite o número de produtos a ser adicionado ao estoque: ");
             int qte = int.Parse(Console.ReadLine());
             p.AdicionarProdutos(qte); //operacao capaz de receber valor de entrada (parametro), e adiciona valor ao dado armazenado na caixa "p"
-            
+
             Console.WriteLine();
             Console.WriteLine("Dados atualizados: " + p);
 
@@ -45,6 +45,16 @@ namespace ControleDeEstoquePOO
             p.Preco = double.Parse(vet[1], CultureInfo.InvariantCulture);
             p.Quantidade = int.Parse(vet[2]);
 
+
+
+            Console.WriteLine();
+            Console.Write("Agora digite a porcentagem aplicada sobre o valor total do produto: ");
+            double taxa = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            p.AdicionarValor(taxa);
+
+            Console.WriteLine();
+            Console.WriteLine("Dados atualizados: " + p);
+
             
             Console.WriteLine();
             Console.Write("Agora digite a porcentagem aplicada sobre o valor total do produto: ");
@@ -56,6 +66,6 @@ namespace ControleDeEstoquePOO
 
             Console.ReadLine();
         }
-        
+
     }
 }
