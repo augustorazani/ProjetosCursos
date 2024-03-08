@@ -55,15 +55,6 @@ namespace ControleDeEstoquePOO
             Console.WriteLine();
             Console.WriteLine("Dados atualizados: " + p);
 
-            
-            Console.WriteLine();
-            Console.Write("Agora digite a porcentagem aplicada sobre o valor total do produto: ");
-            double taxa = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
-            p.AdicionarValor(taxa);
-
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + p);               
-
             Console.ReadLine();
         }
 
