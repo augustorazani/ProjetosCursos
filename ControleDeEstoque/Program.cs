@@ -2,23 +2,24 @@
 using System;
 using System.Globalization;
 
-namespace ControleDeEstoquePOO
+namespace ControleDeEstoquePOO_Encapsulamento
 {
     internal static class Program
     {
         private static void Main(string[] args)
         {
-            Produto p = new Produto();
-
             Console.WriteLine("Entre os dados do produto:");
             Console.Write("Nome: ");
-            p.Nome = Console.ReadLine();
+            string nome = Console.ReadLine();
 
             Console.Write("Preco: ");
-            p.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.Write("Quantidade no estoque: ");
-            p.Quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            int quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Produto p = new Produto(nome, preco, quantidade); //instanciando o objeto Produto após obter os valores
+                                                              //digitados pelo usuário
 
             Console.WriteLine("Dados do produto: " + p);
 
@@ -45,8 +46,6 @@ namespace ControleDeEstoquePOO
             p.Preco = double.Parse(vet[1], CultureInfo.InvariantCulture);
             p.Quantidade = int.Parse(vet[2]);
 
-
-
             Console.WriteLine();
             Console.Write("Agora digite a porcentagem aplicada sobre o valor total do produto: ");
             double taxa = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -57,6 +56,5 @@ namespace ControleDeEstoquePOO
 
             Console.ReadLine();
         }
-
     }
 }
