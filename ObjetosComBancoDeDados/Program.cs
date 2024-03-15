@@ -9,7 +9,6 @@ namespace ObjetosComBancoDeDados
         private static void Main(string[] args)
         {
             string connectionString = "Data Source=RAZANI\\SQL2022;User ID=admin;Password=1234;Encrypt=false;";
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
@@ -46,7 +45,7 @@ namespace ObjetosComBancoDeDados
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Ocorreu um erro: " + ex.Message);
+                    Console.WriteLine("Ocorreu o seguinte erro: " + ex.Message);
                 }
                 finally { connection.Close(); }
             }
