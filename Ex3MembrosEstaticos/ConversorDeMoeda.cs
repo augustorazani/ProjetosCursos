@@ -1,4 +1,4 @@
-﻿namespace Ex3MembrosEstaticos
+﻿    namespace Ex3MembrosEstaticos
 {
     internal class ConversorDeMoeda
     {
