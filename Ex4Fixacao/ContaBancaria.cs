@@ -21,7 +21,7 @@ namespace Ex4Fixacao
         {
             Saldo += saldo;
         }
-        public override string ToString()
+        public override string ToString() //tostring para exibir todos os dados
         {
             return "Conta " +
                 NumeroConta +
