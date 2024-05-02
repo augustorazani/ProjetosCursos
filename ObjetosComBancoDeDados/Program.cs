@@ -41,7 +41,6 @@ namespace ObjetosComBancoDeDados
 
                     // Executar o comando SQL para inserir o produto na tabela Produto
                     enviarProduto.ExecuteNonQuery();
-
                 }
                 catch (Exception ex)
                 {

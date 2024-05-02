@@ -17,7 +17,7 @@ namespace ControleDeEstoquePOO_Encapsulamento
 
             Console.WriteLine(p.Nome);
             Console.WriteLine(p.Preco);
-
+            Console.WriteLine(p);
             Console.ReadLine();
 
         }
