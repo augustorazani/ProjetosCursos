@@ -17,7 +17,7 @@ namespace Listas
             foreach (string obj in list)
             {
                 Console.WriteLine(obj);
-            }
+                }
             Console.WriteLine("List count: " + list.Count);
 
             String s1 = list.Find(x => x[0] == 'A'); //busca primeiro elmento com o caractere "A" na posição zero (primeira letra)
